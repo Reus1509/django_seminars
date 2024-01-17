@@ -1,0 +1,192 @@
+[INFO    :   django.utils.autoreload] - 2024-01-17 13:36:38,136 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 13:36:40,068 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[WARNING :            django.request] - 2024-01-17 13:36:40,138 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] - 2024-01-17 13:36:40,138 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 2290
+[INFO    :             django.server] - 2024-01-17 13:36:42,279 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 13:36:43,127 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:43,683 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:43,952 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:44,133 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:44,316 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 13:36:44,487 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:44,653 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:44,805 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 13:36:44,965 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 13:36:45,117 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 13:36:45,266 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:27:04,275 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:27:04,648 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:32:01,236 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:32:01,562 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:46:53,076 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:47:04,340 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:47:04,651 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-17 15:47:08,767 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: sem_2_coin.side
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py", line 15, in orel_and_reshka
+    coin.save()
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: sem_2_coin.side
+[ERROR   :             django.server] - 2024-01-17 15:47:08,774 : log_message @ 0212: "GET / HTTP/1.1" 500 150415
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:48:28,913 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 15:48:29,262 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 15:48:30,332 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 15:48:32,166 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :             django.server] - 2024-01-17 15:48:32,863 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 15:48:33,560 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 15:48:34,196 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 15:48:34,808 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:01:54,049 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] - 2024-01-17 16:01:55,946 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py", line 16, in orel_and_reshka
+    Coin.get_data(3)
+  File "C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py", line 13, in get_data
+    coins = Coin.objects.all()[:count]
+                                ^^^^^
+NameError: name 'count' is not defined. Did you mean: 'round'?
+[ERROR   :             django.server] - 2024-01-17 16:01:55,948 : log_message @ 0212: "GET / HTTP/1.1" 500 72514
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:02:21,594 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:02:21,900 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 16:02:25,533 : log_message @ 0212: "GET / HTTP/1.1" 200 10
+[INFO    :             django.server] - 2024-01-17 16:02:27,167 : log_message @ 0212: "GET / HTTP/1.1" 200 8
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:03:35,996 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:03:36,344 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:03:42,490 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:03:42,793 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 16:03:44,145 : log_message @ 0212: "GET / HTTP/1.1" 200 263
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:11:16,569 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 16:11:17,803 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :             django.server] - 2024-01-17 16:11:26,946 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:30,084 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :             django.server] - 2024-01-17 16:11:30,814 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:31,240 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:31,412 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:31,612 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:31,789 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:31,960 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :             django.server] - 2024-01-17 16:11:32,128 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:32,297 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :             django.server] - 2024-01-17 16:11:32,460 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :             django.server] - 2024-01-17 16:11:32,630 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :             django.server] - 2024-01-17 16:11:32,794 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :             django.server] - 2024-01-17 16:11:32,946 : log_message @ 0212: "GET / HTTP/1.1" 200 132
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:12:00,301 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:12:00,614 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 16:12:03,721 : log_message @ 0212: "GET / HTTP/1.1" 200 130
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:15:40,598 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 16:15:43,142 : log_message @ 0212: "GET / HTTP/1.1" 200 486
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:17:53,376 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:17:53,737 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:22:05,728 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:22:06,043 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 16:22:07,901 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :             django.server] - 2024-01-17 16:22:13,563 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[INFO    :             django.server] - 2024-01-17 16:22:14,095 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :             django.server] - 2024-01-17 16:22:14,596 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[INFO    :             django.server] - 2024-01-17 16:22:15,112 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :             django.server] - 2024-01-17 16:22:15,772 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[INFO    :             django.server] - 2024-01-17 16:22:16,145 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[INFO    :             django.server] - 2024-01-17 16:22:16,569 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[INFO    :             django.server] - 2024-01-17 16:22:17,006 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[INFO    :             django.server] - 2024-01-17 16:22:17,315 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :             django.server] - 2024-01-17 16:22:17,484 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :             django.server] - 2024-01-17 16:22:17,622 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:49:28,740 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:49:29,067 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:51:17,445 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 16:51:17,792 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:35:07,822 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 17:35:09,802 : log_message @ 0212: "GET / HTTP/1.1" 200 138
+[ERROR   :            django.request] - 2024-01-17 17:35:21,135 : log_response @ 0241: Internal Server Error: /author_view
+Traceback (most recent call last):
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py", line 22, in authors_view
+    res_str = '\n'.join([author for author in authors])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, Author found
+[ERROR   :             django.server] - 2024-01-17 17:35:21,137 : log_message @ 0212: "GET /author_view HTTP/1.1" 500 70274
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:36:27,032 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:36:27,352 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:37:24,140 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:37:24,444 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 17:37:25,116 : log_message @ 0212: "GET / HTTP/1.1" 200 140
+[INFO    :             django.server] - 2024-01-17 17:37:42,654 : log_message @ 0212: "GET /author_view HTTP/1.1" 301 0
+[INFO    :             django.server] - 2024-01-17 17:37:42,658 : log_message @ 0212: "GET /author_view/ HTTP/1.1" 200 712
+[INFO    :             django.server] - 2024-01-17 17:38:16,007 : log_message @ 0212: "GET /post_view/ HTTP/1.1" 200 2798
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:38:56,665 : trigger_reload @ 0266: C:\Users\USERES\Desktop\django\django_seminars\sem_2\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:38:56,967 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 17:39:00,208 : log_message @ 0212: "GET /post_view/ HTTP/1.1" 200 2885
+[INFO    :             django.server] - 2024-01-17 17:39:07,298 : log_message @ 0212: "GET /author_view/ HTTP/1.1" 200 739
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:44:47,465 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 17:44:50,636 : log_message @ 0212: "GET /author_view/ HTTP/1.1" 200 739
+[INFO    :   django.utils.autoreload] - 2024-01-17 17:45:54,279 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] - 2024-01-17 17:45:56,738 : log_message @ 0212: "GET /author_view/ HTTP/1.1" 200 665
+[WARNING :            django.request] - 2024-01-17 17:46:07,009 : log_response @ 0241: Not Found: /posts_view/
+[WARNING :             django.server] - 2024-01-17 17:46:07,009 : log_message @ 0212: "GET /posts_view/ HTTP/1.1" 404 2644
+[INFO    :             django.server] - 2024-01-17 17:46:10,851 : log_message @ 0212: "GET /post_view/ HTTP/1.1" 200 2597
